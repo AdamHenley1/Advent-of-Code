@@ -1,34 +1,17 @@
 #56049
-o = []
-to = []
-input_file = open("/Users/adamhenley/Documents/GitHub/Advent-of-Code/2023/Day 1 Part 1- Python/inputs.txt", 'r')  
-
-for i in input_file.readlines():
-    o.append(i)
-for z in range(len(o)):
-    t = 0
-    v = 0
-    f = 0 
-    l = 0
-    le = o[z]
-    for e in range(len(le)):
-        if le[e].isdigit() == True:
-            if t == 0:
-                f = le[e]
-                t += 1
-                v += 1
-            else: 
-                l = le[e]
-                v += 1 
-    if v == 1:
-        ts = str(f)+ str(f)
-        to.append(ts)
-    else:
-        ts = str(f)+str(l)
-        to.append(ts)
-c = 0
-for i in range(len(to)):
-    to[i] = int(to[i])
-for i in range(len(to)):
-    c += to[i]
+c=0
+h=open("/Users/adamhenley/Documents/GitHub/Advent-of-Code/2023/Day 1 Part 1- Python/inputs.txt", 'r')  
+for z in h.readlines():
+    t=0
+    l=0
+    p=z
+    for e in p:
+        if e.isdigit()==True:
+            if t==0:
+                f=e
+                t+=1
+            elif t>=1:l=e
+    if l==0:l=f
+    g=str(f)+str(l)
+    c+=int(g)
 print(c)
