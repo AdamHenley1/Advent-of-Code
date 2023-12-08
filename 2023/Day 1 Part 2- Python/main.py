@@ -1,8 +1,7 @@
 import os
 o = []
 total = []
-input_file = open("/Users/adamhenley/Documents/python_advent_of_code/1.2/inputs.txt", 'r')  
-ranges = ["1","2","3","4","5","6","7","8","9","0"]
+input_file = open("/Users/adamhenley/Documents/GitHub/Advent-of-Code/2023/Day 1 Part 2- Python/inputs.txt", 'r')  
 for i in input_file.readlines():
     o.append(i)
 
