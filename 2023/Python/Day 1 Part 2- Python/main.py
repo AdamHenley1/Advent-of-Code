@@ -1,5 +1,5 @@
 #54530
-h = open("/Users/adamhenley/Documents/GitHub/Advent-of-Code/2023/Day 1 Part 2- Python/inputs.txt",'r')  
+h = open("Advent-of-Code/2023/Python/Day 1 Part 2- Python/Inputs.txt",'r')  
 c = 0
 for z in h.readlines():
     t=0

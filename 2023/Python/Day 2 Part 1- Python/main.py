@@ -1,6 +1,6 @@
 #2006
 n=0
-h=open("/Users/adamhenley/Documents/GitHub/Advent-of-Code/2023/Day 2 Part 1- Python/input.txt",'r')  
+h=open("Advent-of-Code/2023/Python/Day 2 Part 1- Python/Input.txt",'r')  
 for i in h.readlines():
     l=i
     z=0
